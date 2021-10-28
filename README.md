@@ -9,3 +9,21 @@ category was merged with the toxic category. The Guide asserts unequivocally tha
 there is no simple rule for judging a mushroom's edibility, such as "leaflets three, leave it
 be" for Poisonous Oak and Ivy.
 The main goal is to predict which mushroom is poisonous & which is edible.</p>
+
+## Approach used
+<p>The main goal of this project is to classify whether the Mushroom is Edible or Poisonous </p>
+
+->> Data Analysis        : I started Analysing dataset using pandas,seaborn, and sklearn. 
+
+->> Data visualization   : Plotted t-SNE plot to get clear idea of separation of classes and gain more knowldegw how class elements are clustered. 
+
+![2dScalar Diagram](https://user-images.githubusercontent.com/88154798/139250275-1d7c3308-b49e-47b7-8bce-c0bc8f668fba.png)
+
+->> Evaluation Metric    : Accuracy was used with K-Fold Cross Validation of 10 folds.
+
+->> Model Selection      : Tested Machine Learning Models with gridsearch technique and compared average accuracy obtained in K-Fold Cross Validation .
+![Accuracies](https://user-images.githubusercontent.com/88154798/139250588-6e7b942a-f813-44b2-9f63-46db762a16a4.png)
+
+->> Pickle File          : Selected model as per best accuracy and created pickle file using joblib (Random Forest max depth 72 performed best with average accuracy= 0.9655560200922206 .
+
+

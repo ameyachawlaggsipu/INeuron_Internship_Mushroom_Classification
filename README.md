@@ -1,4 +1,5 @@
 # Mushroom Classification Project
+![d41586-019-03614-0_17409632](https://user-images.githubusercontent.com/88154798/139305607-2f5e5048-4adb-4556-82c3-63c9d210a4d6.jpg)
 
 ## Problem Statement:
 <p>The Audubon Society Field Guide to North American Mushrooms contains descriptions

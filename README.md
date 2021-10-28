@@ -22,6 +22,7 @@ The main goal is to predict which mushroom is poisonous & which is edible.</p>
 ->> Evaluation Metric    : Accuracy was used with K-Fold Cross Validation of 10 folds.
 
 ->> Model Selection      : Tested Machine Learning Models with gridsearch technique and compared average accuracy obtained in K-Fold Cross Validation .
+
 ![Accuracies](https://user-images.githubusercontent.com/88154798/139250588-6e7b942a-f813-44b2-9f63-46db762a16a4.png)
 
 ->> Pickle File          : Selected model as per best accuracy and created pickle file using joblib (Random Forest max depth 72 performed best with average accuracy= 0.9655560200922206 .

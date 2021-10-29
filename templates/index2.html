@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <style>
+    
+    div.input {
+      position: absolute;
+      top: 230px;
+      right: 450px;
+      width: 500px;
+      z-index:5 ;
+      height: 100px;
+      border: 10px solid #73AD21;
+    }
+    #rectangle{
+      position: absolute;
+      top: 100px;
+      right: 400px;
+    z-index:0;
+    width:600px;
+    border-radius: 25px;
+    height:250px;
+    background: whitesmoke;
+}
+footer.fo{
+  position: absolute;
+      top: 600px;
+      right: 500px;
+}
+  body{
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+  img.im{
+    position: absolute;
+    right: 450px;
+
+      top: 400px;
+  }
+  div.print{
+    position: absolute;
+    right: 600px;
+
+      top: 200px;
+  
+  }
+    p.font-monospace {
+      position: absolute;
+      top: 150px;
+      z-index:5 ;
+      right: 400px;
+      width: 500px;
+      height: 100px;
+     
+    }
+    .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+    </style>
+    <title>Hello, world!</title>
+  </head>
+
+  <body leftmargin="100"  background="/static/t.jpeg" >
+
+
+<h1>
+  <p class="font-monospace">Mushroom Classifier</p>
+</h1>
+<div id="rectangle"></div>
+<img src="/static/s.jpg" width="500px" height="200px" class="im">
+
+<form action="/">
+    <button class="btn"><i class="fa fa-home"></i> Home</button>
+ </form>
+
+<br>
+<br>
+<div class="print">
+<ul>
+    {% for item in data %}
+        <li>{{item}}</li>
+    {% endfor %}
+    </ul>
+</div>
+<footer class="fo">
+  <h2><p>Author: Ameya Chawla</p></h2>
+</footer>
+  </body>
+
+</html>

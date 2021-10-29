@@ -38,3 +38,6 @@ The main goal is to predict which mushroom is poisonous & which is edible.</p>
 
 ![Screenshot (1446)](https://user-images.githubusercontent.com/88154798/139389101-b11a5bf1-dad6-4e72-a3e6-51583c4e2881.png)
 
+## Deployment
+Web app is deployed using Heroku services.
+https://mushroomclassifier99.herokuapp.com/

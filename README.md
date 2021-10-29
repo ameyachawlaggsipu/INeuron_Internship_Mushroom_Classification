@@ -28,4 +28,12 @@ The main goal is to predict which mushroom is poisonous & which is edible.</p>
 
 ->> Pickle File          : Selected model as per best accuracy and created pickle file using joblib (Random Forest max depth 72 performed best with average accuracy= 0.9655560200922206 .
 
+## Home Webpage to upload .csv file
+
+![Screenshot (1445)](https://user-images.githubusercontent.com/88154798/139388983-f5db7144-0550-4ccb-8b72-8cfd304bf109.png)
+
+## Prediction Webpage showing resul and home button to go back to home page
+
+![Screenshot (1446)](https://user-images.githubusercontent.com/88154798/139389101-b11a5bf1-dad6-4e72-a3e6-51583c4e2881.png)
+
 

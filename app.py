@@ -2,6 +2,7 @@ from flask import Flask, render_template,request
 import os
 from werkzeug.utils import secure_filename
 import numpy
+import pickle
 import joblib 
 from Logger.logger import Logs
 import pandas as pd
@@ -12,6 +13,8 @@ model = joblib.load('Best_Model_Random_forest_Max_depth_72.pkl')
 log.addLog("INFO", "Best_Model_Random_forest_Max_depth_72.pkl loaded Successfully !")
 print(model)
 
+with open("test.txt", "rb") as fp:   # Unpickling
+    b = pickle.load(fp)
 
 
 @app.route('/')
@@ -38,9 +41,12 @@ def predict():
                 return render_template('index2.html' , data=r)
 def output(file):
     data=pd.read_csv(file)
-    data=numpy.array(data)
     print( data.shape)
     log.addLog("INFO", "Prediction started Successfully !")
+    j=1
+    for co in data.columns:
+        data[co]=b[j].transform(data[co])
+        j=j+1
     prediction=model.predict(data)
 
     return prediction 
